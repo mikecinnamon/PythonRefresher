@@ -175,7 +175,7 @@ In [19]: s2.index
 Out[19]: Index(['a', 'b', 'c'], dtype='object')
 ```
 
-Indexes are useful for combining, filtering and joining data sets. There are many types of indexes, which allow for specific operations. So, do not look at the index as an embarrassment, which is what it seems at first sight, but as a tool for data management.
+Indexes are useful for combining, filtering and joining data sets. There are many types of indexes, which allow for specific operations. So, you should not look at the index as an embarrassment, which is what it seems at first sight, but as a for data management tool.
 
 ## Pandas data frames
 
@@ -292,7 +292,7 @@ Out[28]:
 Name: v2, dtype: object
 ```
 
-Note that the syntax is the same as for extracting the value of a key from a dictionary (not by chance). You can also extract a **data subaframe** containing a subset of complete columns from a data frame. You can specify this with a list containing the names of those columns:
+Note that the syntax is here the same as that used when extracting the value of a key from a dictionary (not by chance). You can also extract a **data subaframe** containing a subset of complete columns from a data frame. You can specify this with a list containing the names of those columns:
 
 ```
 In [29]: df[['v1', 'v2']]
