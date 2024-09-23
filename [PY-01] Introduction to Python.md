@@ -6,17 +6,17 @@
 
 * A **web scraping** program that captures data on the current prices published in an e-commerce web site, storing them in a database.
 
-* A **machine learning** program that trains an algorithm that assigns credit scores to borrowers in a lending platform.
+* A **machine learning** program that trains a model that assigns credit scores to borrowers in a lending platform.
 
-* A **pricing algorithm** that estimates the market price of a real estate asset.
+* A **pricing model** that estimates the market price of a real estate asset.
 
-These programs are later executed many times without being modified. But you can use Python in other ways. For instance, to examine the variation of the stock price of a specific company, or the structure of the vacation rental market in a specific region. Either for developing a program, which always involves a bit of trial and error, or in a data analysis, we use a basic tool, the **Python interactive interpreter**. We can have several instances of the interpreter, called **kernels**, running independently in our computer. To deal with the Python interpreter, Pythonistas use an app that provides an as interface to the Python interpreter, chosen among the many available choices (see below). 
+These programs are later executed many times without being modified. But you can use Python in other ways. For instance, to examine the variation of the stock price of a specific company, or the structure of the vacation rental market in a specific region. Either for developing a program, which always involves a bit of trial and error, or in a data analysis, we use a basic tool, the **Python interactive interpreter**. You can have several instances of the interpreter, called **kernels**, running independently in our computer. To deal with the Python interpreter, Pythonistas use an app that provides an as interface to the Python interpreter, chosen among the many available choices (see below). 
 
 ## Python modules and packages
 
 Many additional resources have been added to Python in the form of **modules**. A module is just a text file containing Python code. Modules are grouped in **libraries**. The **Python Standard Library**, distributed with Python, contains **built-in modules** providing standardized solutions for many problems that occur in everyday programming. For instance, the module `math` provides mathematical functions, while the module `datetime` provides functions for manipulating dates and times.
 
-Other libraries are typically called **packages**, because their elements are packed according to some specific rules which allow you to install and call them together. Python can be extended by more than 300,000 packages. Some big packages like scikit-learn (a machine learning toolkit) have **subpackages**.
+Other libraries are called **packages**, because their elements are packed according to some specific rules which allow you to install and call them together. Python can be extended by more than 300,000 packages. Some big packages like scikit-learn (a machine learning toolkit) have **subpackages**.
 
 Since the basic Python toolkit (without any module) is quite limited, you will need to **import** additional resources for practically everything. Once a module has been imported, all its functions are available. Alternatively, you can import a single function from a module. Resources are imported just for the current kernel. You can only import from packages which are already **installed** in your computer. 
 
@@ -166,9 +166,10 @@ Out[12]: float
 
 Nevertheless, you don't have to worry much about thesedistinctions, because Python is very friendly for numbers, allowing the mixture of types, that will managed in the best way. See this in the next example.
 
+```
 In [13]: 2 + 2.5
 Out[13]: 4.5
-
+```
 
 ## Boolean data
 
@@ -304,7 +305,9 @@ In [31]: my_dict = {'name': 'Joan', 'gender': 'F', 'age': 32}
 
 ## Other data container types
 
-Some packages mentioned above come with new data container types: NumPy arrays, Pandas series and Pandas data frames. Dealing with so many types of objects is a bit challenging for the beginner. The elements of the Python data containers (*e.g*. lists) can have different data types, but NumPy and Pandas data containers have consistency constraints. So, an array has a unique data type, while a data frame has a unique data type for every column.
+Some Python libraries come with new data container types. For instance, NumPy arrays, Pandas series and Pandas data frames. Dealing with so those different types is a bit confusing for the beginner. 
+
+The elements of the Python data containers (*e.g*. lists) can have different data types, but NumPy and Pandas data containers have consistency constraints. So, an array has a unique data type, while a data frame has a unique data type for every column.
 
 ##  Functions
 
@@ -360,9 +363,8 @@ TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
 Functions can have more than one argument, as in:
 
 ```
-In [36]: def g(x, y): return x*y/(x**2 + y**2)
+In [36]: def g(x, y): 
+    ...:     return x*y/(x**2 + y**2)
     ...: g(1, 1)
 Out[36]: 0.5
 ```
-
-Note that, in the definition of `g()`, I have used a shorter way. Most programmers would make it longer, as I did previously for `f()`.
