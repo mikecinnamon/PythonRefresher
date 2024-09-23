@@ -62,5 +62,6 @@ def f(x):
 f(2)
 f(1)
 f('Mary')
-def g(x, y): return x*y/(x**2 + y**2)
+def g(x, y):
+    return x*y/(x**2 + y**2)
 g(1, 1)
